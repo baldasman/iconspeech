@@ -5,8 +5,8 @@ import { NavController } from 'ionic-angular';
 import { BasePage } from '../../pages/base-page';
 
 @Component({
-    selector: 'popover-header-contact',
-    templateUrl: 'header-contact.popover.html'
+    selector: 'popover-languages-selector',
+    templateUrl: 'languages-selector.popover.html'
 })
 export class LanguagesSelectorPopoverPage extends BasePage {
     

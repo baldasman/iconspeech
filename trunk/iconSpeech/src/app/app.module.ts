@@ -19,6 +19,9 @@ import { File } from '@ionic-native/file';
 import { Transfer, FileUploadOptions, TransferObject } from '@ionic-native/transfer';
 import {AppConstants} from "./app.constants";
 import {ServiceLocator} from "../providers/service-locator";
+import {LanguagesSelectorPopoverPage} from "../popovers/languages-selector/languages-selector.popover";
+import {HeaderComponent} from "../components/header/header.component";
+import {AppVariables} from "./app.variables";
 
 @NgModule({
     declarations: [
@@ -28,7 +31,9 @@ import {ServiceLocator} from "../providers/service-locator";
         IconsMessagePage,
         TranslationTextPage,
         TranslationTextResultPage,
-        TranslationVoicePage
+        TranslationVoicePage,
+        LanguagesSelectorPopoverPage,
+        HeaderComponent
     ],
     imports: [
         BrowserModule,
@@ -50,17 +55,18 @@ import {ServiceLocator} from "../providers/service-locator";
         IconsMessagePage,
         TranslationTextPage,
         TranslationTextResultPage,
-        TranslationVoicePage
+        TranslationVoicePage,
+        LanguagesSelectorPopoverPage
     ],
     providers: [
         StatusBar,
         SplashScreen,
         {provide: ErrorHandler, useClass: IonicErrorHandler},
         AppConstants,
+        AppVariables,
         MediaPlugin,
         File,
-        Transfer,
-        {provide: ErrorHandler, useClass: IonicErrorHandler}
+        Transfer
     ]
 })
 

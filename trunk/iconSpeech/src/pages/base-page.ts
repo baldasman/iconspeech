@@ -1,4 +1,4 @@
-import { NavController, Events, AlertController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { isUndefined } from 'ionic-angular/util/util';
 
@@ -22,12 +22,14 @@ export class BasePage {
         this.appVariables = ServiceLocator.injector.get(AppVariables);
         this.translateService = ServiceLocator.injector.get(TranslateService);
 
-        this.translateService.setDefaultLang(this.appVariables.sourceLanguage);
+        this.translateService.setDefaultLang(this.appVariables.sourceLanguage || 'en');
         this.loadTranslations([]);
     }
 
     protected loadTranslations(translationsToLoad: string[], success?: Function) {
-        return this.translateService.get(translationsToLoad).subscribe(translations => {
+        translationsToLoad.push('common.iconSpeech');
+
+        return this.translateService.get(translationsToLoad || ['']).subscribe(translations => {
             this.pageTranslations = translations;
             if (!isUndefined(success)) {
                 success(translations);

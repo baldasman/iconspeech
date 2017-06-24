@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ViewController, PopoverController } from 'ionic-angular';
-import {AppConstants} from "../../app/app.constants";
-import {LanguagesSelectorPopoverPage} from "../../popovers/languages-selector/header-contact.popover";
+import {AppVariables} from "../../app/app.variables";
+import {LanguagesSelectorPopoverPage} from "../../popovers/languages-selector/languages-selector.popover";
 
 // *** SERVICES ***
 
@@ -11,16 +11,19 @@ import {LanguagesSelectorPopoverPage} from "../../popovers/languages-selector/he
 })
 export class HeaderComponent {
 
-    @Input() private sourceLanguage: any;
-    @Input() private targetLanguage: any;
-
-    constructor(private popoverCtrl: PopoverController, private appConstants: AppConstants) {
+    constructor(private appVariables: AppVariables, private popoverCtrl: PopoverController) {
 
     }
 
     presentPopover(event: any) {
         let popover = this.popoverCtrl.create(LanguagesSelectorPopoverPage);
         popover.present({ ev: event });
+    }
+
+    toggleLanguages() {
+        let aux = new this.appVariables.targetLanguage;
+        this.appVariables.setTargetLanguage(this.appVariables.sourceLanguage);
+        this.appVariables.setSourceLanguage(aux);
     }
 
 }

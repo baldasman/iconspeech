@@ -1,13 +1,15 @@
 <ion-navbar>
     <ion-buttons end>
-        <button ion-button icon-only (click)="presentPopover($event)">
-            <img *ngIf="sourceLanguage" [src]="sourceLanguage.flag">
-            <div *ngIf="sourceLanguage">{{ sourceLanguage.countryCode }}</div>
+        <button ion-button clear (click)="presentPopover($event)">
+            <div *ngIf="appVariables.sourceLanguage">{{ appVariables.sourceLanguage }}</div>
+        </button>
 
-            <!--<img src="assets/img/dual-arrow.png">-->
+        <button ion-button clear (click)="toggleLanguages()">
+            <img src="assets/imgs/change.png"/>
+        </button>
 
-            <img *ngIf="targetLanguage" [src]="targetLanguage.flag">
-            <div *ngIf="targetLanguage">{{ targetLanguage.countryCode }}</div>
+        <button ion-button clear (click)="presentPopover($event)">
+            <div *ngIf="appVariables.targetLanguage">{{ appVariables.targetLanguage }}</div>
         </button>
     </ion-buttons>
 </ion-navbar>

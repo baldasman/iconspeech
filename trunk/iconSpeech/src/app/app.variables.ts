@@ -15,4 +15,5 @@ export class AppVariables {
     setTargetLanguage(lang: any) {
         this.targetLanguage = lang;
     }
+
 }
