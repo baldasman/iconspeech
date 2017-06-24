@@ -1,13 +1,12 @@
 page-home {
+	.cards-container {
+		@extend .row, .start-start, .wrap;
+	}
 
   .cards{
+		@extend .row, .center-center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 50%;
-    height: 33vh;
-    text-align: center;
+    height: calc(33.33vh - (56px / 3));
   }
-
 }
