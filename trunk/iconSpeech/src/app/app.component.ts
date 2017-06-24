@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import {TranslationVoicePage} from "../pages/translation-voice/translation-voice";
+
 import {AppConstants} from "./app.constants";
 @Component({
   templateUrl: 'app.html'
