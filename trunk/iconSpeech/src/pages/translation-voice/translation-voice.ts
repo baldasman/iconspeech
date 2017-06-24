@@ -50,6 +50,7 @@ export class TranslationVoicePage {
   startPlay(){
     this.fileRecorded.play();
     console.log('cenas:', this.file.resolveLocalFilesystemUrl(this.file.externalRootDirectory + 'my_file.wav'));
+    console.log('cenas data', this.file.readAsDataURL('assets/sounds/', 'explosion.wav'));
   }
 
 
