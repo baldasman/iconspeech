@@ -1,8 +1,1 @@
-<button ion-item (click)="showMessages()">
-    <ion-icon name="chatbubbles"></ion-icon>
-    {{ 'common.messages' | translate }}
-</button>
-<button ion-item (click)="addAccessKey()">
-    <ion-icon name="key"></ion-icon>
-    {{ 'common.accessKey' | translate }}
-</button>
+<button ion-item *ngFor="let language of appConstants.supportedLanguages" (click)="setLanguage(language.countryCode)">{{ language.internalCode | translate }}</button>

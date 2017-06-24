@@ -4,13 +4,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-
 import {AppConstants} from "./app.constants";
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  protected rootPage:any;
+
+    protected rootPage: any;
 
     constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private appConstants: AppConstants) {
         platform.ready().then(() => {

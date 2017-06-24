@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ViewController } from 'ionic-angular';
 
 // *** PAGES ***
 import { BasePage } from '../../pages/base-page';
+import {AppVariables} from "../../app/app.variables";
 
 @Component({
     selector: 'popover-languages-selector',
@@ -10,8 +11,16 @@ import { BasePage } from '../../pages/base-page';
 })
 export class LanguagesSelectorPopoverPage extends BasePage {
     
-    constructor(navCtrl: NavController) {
+    constructor(navCtrl: NavController, private viewCtrl: ViewController) {
         super(navCtrl);
     }
 
+    setLanguage(lang: string) {
+        if (this.appVariables.popoverLanguageType == 'source') {
+            this.appVariables.setSourceLanguage(lang);
+        } else if (this.appVariables.popoverLanguageType == 'target') {
+            this.appVariables.setTargetLanguage(lang);
+        }
+        this.viewCtrl.dismiss();
+    }
 }

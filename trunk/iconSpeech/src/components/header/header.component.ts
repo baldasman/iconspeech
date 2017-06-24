@@ -15,15 +15,10 @@ export class HeaderComponent {
 
     }
 
-    presentPopover(event: any) {
+    presentPopover(type: string) {
+        this.appVariables.setPopoverLanguageType(type);
         let popover = this.popoverCtrl.create(LanguagesSelectorPopoverPage);
         popover.present({ ev: event });
-    }
-
-    toggleLanguages() {
-        let aux = new this.appVariables.targetLanguage;
-        this.appVariables.setTargetLanguage(this.appVariables.sourceLanguage);
-        this.appVariables.setSourceLanguage(aux);
     }
 
 }
