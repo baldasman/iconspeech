@@ -1,0 +1,13 @@
+<ion-navbar>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="presentPopover($event)">
+            <img *ngIf="sourceLanguage" [src]="sourceLanguage.flag">
+            <div *ngIf="sourceLanguage">{{ sourceLanguage.countryCode }}</div>
+
+            <!--<img src="assets/img/dual-arrow.png">-->
+
+            <img *ngIf="targetLanguage" [src]="targetLanguage.flag">
+            <div *ngIf="targetLanguage">{{ targetLanguage.countryCode }}</div>
+        </button>
+    </ion-buttons>
+</ion-navbar>
