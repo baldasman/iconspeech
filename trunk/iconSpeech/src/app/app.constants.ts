@@ -8,6 +8,8 @@ import { BaseService } from '../providers/base.service';
 export class AppConstants extends BaseService {
 
     public countries = [];
+    public supportedLanguages = [];
+    public icons = [];
 
 	constructor(private platform: Platform, private http: Http) {
 		super();
@@ -31,5 +33,7 @@ export class AppConstants extends BaseService {
 
 	initData(data: any) {
 		this.countries = data.countries;
+		this.supportedLanguages = data.supportedLanguages;
+        this.icons = data.icons;
 	}
 }

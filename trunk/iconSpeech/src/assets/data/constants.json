@@ -1,5 +1,15 @@
 {
-  "icons":[
+	"supportedLanguages": [
+		{
+			"countryCode": "pt",
+			"internalCode": "constants.supportedLanguages.internalCode1"
+		},
+		{
+			"countryCode": "en",
+			"internalCode": "constants.supportedLanguages.internalCode2"
+		}
+	],
+  "icons": [
     {
       "name": "24h.png",
       "text": "one day"

@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 import {Component, enableProdMode} from '@angular/core';
 import {Platform} from 'ionic-angular';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {HomePage} from '../pages/home/home';
+=======
+import { Component, enableProdMode } from '@angular/core';
+import { Platform } from 'ionic-angular';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+import { HomePage } from '../pages/home/home';
+>>>>>>> d75381244a5fdbb1777a1a6922155645d17efa88
 import {AppConstants} from "./app.constants";
 
 @Component({
@@ -11,6 +20,11 @@ import {AppConstants} from "./app.constants";
 
 })
 export class MyApp {
+<<<<<<< HEAD
+=======
+
+    protected rootPage: any;
+>>>>>>> d75381244a5fdbb1777a1a6922155645d17efa88
 
   protected rootPage: any;
 
@@ -26,6 +40,7 @@ export class MyApp {
         (error: any) => this.onLoadConstantsError(error)
       );
 
+<<<<<<< HEAD
     });
 
   }
@@ -42,6 +57,12 @@ export class MyApp {
     console.error('Error on appConstants.loadData(): ', error);
 
   }
+=======
+    private onLoadConstants(data: any) {
+        this.appConstants.initData(data.body);
+        this.rootPage = HomePage;
+    }
+>>>>>>> d75381244a5fdbb1777a1a6922155645d17efa88
 
 }
 
