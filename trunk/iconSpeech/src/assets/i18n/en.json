@@ -1,5 +1,11 @@
 {
 	"common": {
 		"iconSpeech": "IconSpeech"
+	},
+	"constants": {
+		"supportedLanguages": {
+			"internalCode1": "Portuguese",
+			"internalCode2": "English"
+		}
 	}
 }
