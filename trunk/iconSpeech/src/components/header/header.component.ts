@@ -16,9 +16,5 @@ export class HeaderComponent {
     constructor(private appConstants: AppConstants) {
 
     }
-    
-    ionViewDidEnter() {
-
-    }
 
 }
