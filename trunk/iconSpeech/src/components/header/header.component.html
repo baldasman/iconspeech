@@ -4,7 +4,7 @@
             <div *ngIf="appVariables.sourceLanguage" class="button-language">{{ appVariables.sourceLanguage }}</div>
         </button>
 
-        <button ion-button clear (click)="toggleLanguages()">
+        <button ion-button clear (click)="appVariables.toggleSourceAndTargetLanguages()">
             <img src="assets/imgs/change.png"/>
         </button>
 

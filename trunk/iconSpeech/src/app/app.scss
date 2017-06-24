@@ -14,3 +14,120 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+
+// *** UTILITIES ***
+
+// *** FLEX ***
+.flex {
+	flex: 1;
+	-ms-flex: 1;		/* IE 10 */
+	-webkit-flex: 1;	/* Safari 6.1+ */
+}
+
+.row {
+	display: flex;
+	display: -webkit-flex; // Safari
+	flex-direction: row;
+	-webkit-flex-direction: row; // Safari
+}
+
+.column {
+	display: flex;
+	display: -webkit-flex; // Safari
+	flex-direction: column;
+	-webkit-flex-direction: column; // Safari
+}
+
+.column-reverse {
+	display: flex;
+	display: -webkit-flex; // Safari
+	flex-direction: column-reverse;
+	-webkit-flex-direction: column-reverse; // Safari
+}
+
+.wrap {
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap; // Safari
+}
+
+.start-center {
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.start-start {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.start-end {
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.start-stretch {
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.center-start {
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.center-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.center-end {
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.end-start {
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.end-center {
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.end-end {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.space-around-start {
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.space-around-center {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.space-around-end {
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.space-between-start {
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.space-between-center {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.space-between-end {
+	justify-content: space-between;
+	align-items: flex-end;
+}

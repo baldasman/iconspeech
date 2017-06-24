@@ -1,3 +1,1 @@
-<ion-list>
-    <button ion-item *ngFor="let language of appConstants.supportedLanguages" (click)="setLanguage(language.countryCode)">{{ language.internalCode | translate }}</button>
-</ion-list>
+<button ion-item *ngFor="let language of appConstants.supportedLanguages" (click)="setLanguage(language.countryCode)">{{ language.internalCode | translate }}</button>

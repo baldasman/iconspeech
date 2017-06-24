@@ -21,10 +21,4 @@ export class HeaderComponent {
         popover.present({ ev: event });
     }
 
-    toggleLanguages() {
-        let aux = this.appVariables.targetLanguage;
-        this.appVariables.setTargetLanguage(this.appVariables.sourceLanguage);
-        this.appVariables.setSourceLanguage(aux);
-    }
-
 }

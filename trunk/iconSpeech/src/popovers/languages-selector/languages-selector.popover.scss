@@ -1,5 +1,5 @@
 popover-languages-selector {
- ion-list {
-	 margin-bottom: 0 !important;
- }
+	button:last-child .item-inner {
+		border-bottom: 0 !important;
+	}
 }

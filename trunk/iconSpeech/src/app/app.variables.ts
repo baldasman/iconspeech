@@ -18,13 +18,29 @@ export class AppVariables {
     }
 
     setSourceLanguage(lang: any) {
+        if (this.targetLanguage == lang) {
+            this.targetLanguage = this.sourceLanguage;
+            this.storage.set('targetLanguage', this.targetLanguage);
+        }
+
         this.sourceLanguage = lang;
         this.storage.set('sourceLanguage', lang);
     }
 
     setTargetLanguage(lang: any) {
+        if (this.sourceLanguage == lang) {
+            this.sourceLanguage = this.targetLanguage;
+            this.storage.set('sourceLanguage', this.sourceLanguage);
+        }
+
         this.targetLanguage = lang;
         this.storage.set('targetLanguage', lang);
+    }
+
+    toggleSourceAndTargetLanguages() {
+        let aux = this.targetLanguage;
+        this.setTargetLanguage(this.sourceLanguage);
+        this.setSourceLanguage(aux);
     }
 
     setPopoverLanguageType(type: string) {
