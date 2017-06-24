@@ -4,14 +4,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import {TranslationVoicePage} from "../pages/translation-voice/translation-voice";
 
 import {AppConstants} from "./app.constants";
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TranslationVoicePage;
+  protected rootPage:any;
 
     constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private appConstants: AppConstants) {
         platform.ready().then(() => {
@@ -27,7 +26,7 @@ export class MyApp {
 
     private onLoadConstants(data: any) {
         this.appConstants.initData(data.body);
-
+        this.rootPage = HomePage;
     }
 
     private onLoadConstantsError(error: any) {
