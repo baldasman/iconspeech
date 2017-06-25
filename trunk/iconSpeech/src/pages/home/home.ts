@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {BasePage} from "../base-page";
 import {IconsMessagePage} from "../icons-message/icons-message";
+import {CommunicationTypesPage} from "../communication-types/communication-types";
 import {TranslationVoicePage} from "../translation-voice/translation-voice";
 
 @Component({
@@ -18,10 +19,12 @@ export class HomePage extends BasePage {
         this.navCtrl.push(IconsMessagePage);
     }
 
+    goToCommunicationTypes() {
+        this.navCtrl.push(CommunicationTypesPage);
+    }
+
     gotToFood(){
-
       this.navCtrl.push(TranslationVoicePage);
-
     }
 
 }
