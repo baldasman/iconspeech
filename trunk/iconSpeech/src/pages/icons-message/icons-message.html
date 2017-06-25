@@ -2,7 +2,7 @@
     <component-header></component-header>
 </ion-header>
 
-<ion-toolbar id="toolbar" style="margin-top: 56px;">
+<ion-toolbar id="toolbar"  [ngClass]="{'margin-top-56' : android}">
     <div class="message-container">
         <div class="message-icons-container">
             <img *ngFor="let messageIcon of messageIcons" [src]="messageIcon" class="message-icon"/>
@@ -25,7 +25,7 @@
     </div>
 </ion-toolbar>
 
-<ion-content [ngClass]="{'top-margin-with-icons' : messageTextAux.length > 0}">
+<ion-content [ngClass]="{'top-margin-with-icons' : messageTextAux.length > 0 && android}">
     <div id="icons-container">
         <div *ngFor="let icon of icons" class="icon-container">
             <img src="{{ 'assets/imgs/' + icon.name}}" (click)="selectIcon(icon.name, icon.text)" class="available-icon"/>
