@@ -24,6 +24,7 @@ export class BaseService {
 		headers.append('Content-Type', 'application/json');
 		headers.append('Accept', 'application/json');
 		headers.append('Access-Control-Allow-Origin', '*');
+		headers.append('Access-Control-Allow-Methods', '*');
 
 		if (token) {
 			headers.append('Authorization', token);
