@@ -43,7 +43,7 @@ export class IconsMessagePage extends BasePage {
   selectIcon(name: string, text: string) {
     let iconPath: string = 'assets/imgs/' + name;
     this.messageIcons.push(iconPath);
-    //this.getTranslation(text);
+    this.getTranslation(text);
     this.setScrollContentHeight();
 
     console.log('icon: ' + name);
