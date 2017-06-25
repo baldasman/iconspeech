@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
+import {NavController, NavParams, Platform} from 'ionic-angular';
 import {BasePage} from "../base-page";
 import {TranslationTextService} from "../../providers/translation-text-service/translation-text.service";
 import {TranslationTextPage} from "../translation-text/translation-text";
@@ -16,10 +16,11 @@ export class IconsMessagePage extends BasePage {
   private messageTextLoading: boolean;
   private filter: string;
   private icons = [];
+  private android: boolean;
 
-  constructor(navCtrl: NavController, private translationTextService: TranslationTextService, private navParams: NavParams) {
+  constructor(platform: Platform, navCtrl: NavController, private translationTextService: TranslationTextService, private navParams: NavParams) {
     super(navCtrl);
-
+    this.android = platform.is('android');
     this.messageTextAux = [];
   }
 
