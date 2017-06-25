@@ -4,6 +4,7 @@ import {BasePage} from "../base-page";
 import {IconsMessagePage} from "../icons-message/icons-message";
 import {CommunicationTypesPage} from "../communication-types/communication-types";
 import {TranslationVoicePage} from "../translation-voice/translation-voice";
+import {TranslationTextPage} from "../translation-text/translation-text";
 
 @Component({
     selector: 'page-home',
@@ -19,8 +20,5 @@ export class HomePage extends BasePage {
         this.navCtrl.push(CommunicationTypesPage);
     }
 
-    goToFood() {
-        this.navCtrl.push(TranslationVoicePage);
-    }
 
 }
