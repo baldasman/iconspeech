@@ -27,7 +27,7 @@
 
 <ion-content [ngClass]="{'top-margin-with-icons' : messageTextAux.length > 0}">
     <div id="icons-container">
-        <div *ngFor="let icon of appConstants.icons" class="icon-container">
+        <div *ngFor="let icon of icons" class="icon-container">
             <img src="{{ 'assets/imgs/' + icon.name}}" (click)="selectIcon(icon.name, icon.text)" class="available-icon"/>
             <!--{{ icon.text | translate }}-->
         </div>
