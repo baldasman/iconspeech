@@ -12,13 +12,13 @@
 	"icons": [
     {
     "name":"24h.png",
-    "text":"24h",
-    "parent":null
+    "text":"One day",
+    "parent": "health32"
   },
     {
-      "name":"24h2.png",
-      "text":"24h2",
-      "parent":null
+      "name": "24h2.png",
+      "text": "Tomorrow",
+      "parent": "health32"
     },
     {
       "name":"bathroom.png",
@@ -27,17 +27,17 @@
     },
     {
       "name":"broken_boat.png",
-      "text":"broken_boat",
+      "text":"broken boat",
       "parent":null
     },
     {
       "name":"broken_bus.png",
-      "text":"broken_bus",
+      "text":"broken bus",
       "parent":null
     },
     {
       "name":"broken_car.png",
-      "text":"broken_car",
+      "text":"broken car",
       "parent":null
     },
     {
@@ -133,12 +133,12 @@
     {
       "name":"cough.png",
       "text":"cough",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"doctor.png",
       "text":"doctor",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"family.png",
@@ -158,7 +158,7 @@
     {
       "name":"head.png",
       "text":"head",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"health.png",
@@ -183,7 +183,7 @@
     {
       "name":"heart.png",
       "text":"heart",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"heart2.png",
@@ -198,7 +198,7 @@
     {
       "name":"lungs.png",
       "text":"lungs",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"map.png",
@@ -213,7 +213,7 @@
     {
       "name":"medicine2.png",
       "text":"medicine2",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"megaphone.png",
@@ -228,7 +228,7 @@
     {
       "name":"pain.png",
       "text":"pain",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"phone.png",
@@ -262,12 +262,12 @@
     },
     {
       "name":"search_user.png",
-      "text":"search_user",
+      "text":"search user",
       "parent":null
     },
     {
       "name":"search_user2.png",
-      "text":"search_user2",
+      "text":"search user2",
       "parent":null
     },
     {
@@ -283,11 +283,11 @@
     {
       "name":"tooth.png",
       "text":"tooth",
-      "parent":null
+      "parent":"health32"
     },
     {
       "name":"user_marker.png",
-      "text":"user_marker",
+      "text":"user marker",
       "parent":null
     },
     {
