@@ -11,6 +11,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+<<<<<<< HEAD
+>>>>>>> d75381244a5fdbb1777a1a6922155645d17efa88
+=======
 >>>>>>> d75381244a5fdbb1777a1a6922155645d17efa88
 import {AppConstants} from "./app.constants";
 
@@ -20,6 +23,7 @@ import {AppConstants} from "./app.constants";
 
 })
 export class MyApp {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -39,6 +43,22 @@ export class MyApp {
         (data: any) => this.onLoadConstants(data),
         (error: any) => this.onLoadConstantsError(error)
       );
+=======
+
+    protected rootPage: any;
+
+    constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private appConstants: AppConstants) {
+        platform.ready().then(() => {
+            statusBar.styleDefault();
+            splashScreen.hide();
+
+            this.appConstants.loadData().subscribe(
+                (data: any) => this.onLoadConstants(data),
+                (error: any) => this.onLoadConstantsError(error)
+            );
+        });
+    }
+>>>>>>> d75381244a5fdbb1777a1a6922155645d17efa88
 
 <<<<<<< HEAD
     });
