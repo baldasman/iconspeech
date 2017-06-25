@@ -10,166 +10,296 @@
 		}
 	],
 	"icons": [
-		{
-			"name": "24h.png",
-			"text": "one day"
-		},
-		{
-			"name": "24h2.png",
-			"text": "Tomorrow"
-		},
-		{
-			"name": "bathroom.png",
-			"text": "bathroom"
-		},
-		{
-			"name": "bus.png",
-			"text": "bus"
-		},
-		{
-			"name": "call.png",
-			"text": "call"
-		},
-		{
-			"name": "camera.png",
-			"text": "camera"
-		},
-		{
-			"name": "change.png",
-			"text": "change"
-		},
-		{
-			"name": "charge.png",
-			"text": "charge"
-		},
-		{
-			"name": "chat.png",
-			"text": "chat"
-		},
-		{
-			"name": "chat2.png",
-			"text": "chat"
-		},
-		{
-			"name": "chat3.png",
-			"text": "chat"
-		},
-		{
-			"name": "chat4.png",
-			"text": "chat"
-		},
-		{
-			"name": "clock.png",
-			"text": "clock"
-		},
-		{
-			"name": "cloths.png",
-			"text": "cloths"
-		},
-		{
-			"name": "coffee.png",
-			"text": "coffee"
-		},
-		{
-			"name": "cough.png",
-			"text": "cough"
-		},
-		{
-			"name": "doctor.png",
-			"text": "doctor"
-		},
-		{
-			"name": "food.png",
-			"text": "food"
-		},
-		{
-			"name": "head.png",
-			"text": "head"
-		},
-		{
-			"name": "health.png",
-			"text": "health"
-		},
-		{
-			"name": "health2.png",
-			"text": "health"
-		},
-		{
-			"name": "health3.png",
-			"text": "health"
-		},
-		{
-			"name": "heart.png",
-			"text": "heart"
-		},
-		{
-			"name": "heart2.png",
-			"text": "heart"
-		},
-		{
-			"name": "location.png",
-			"text": "where"
-		},
-		{
-			"name": "lungs.png",
-			"text": "lungs"
-		},
-		{
-			"name": "map.png",
-			"text": "map"
-		},
-		{
-			"name": "medicine.png",
-			"text": "medicine"
-		},
-		{
-			"name": "medicine2.png",
-			"text": "medicine"
-		},
-		{
-			"name": "mombaby.png",
-			"text": "baby"
-		},
-		{
-			"name": "phone.png",
-			"text": "phone"
-		},
-		{
-			"name": "plane.png",
-			"text": "airplane"
-		},
-		{
-			"name": "police.png",
-			"text": "police"
-		},
-		{
-			"name": "refresh.png",
-			"text": "refresh"
-		},
-		{
-			"name": "stomach.png",
-			"text": "stomach"
-		},
-		{
-			"name": "taxi.png",
-			"text": "taxi"
-		},
-		{
-			"name": "tooth.png",
-			"text": "tooth"
-		},
-		{
-			"name": "user_marker.png",
-			"text": "my position"
-		},
-		{
-			"name": "users.png",
-			"text": "user"
-		},
-		{
-			"name": "water.png",
-			"text": "water"
-		}
+    {
+    "name":"24h.png",
+    "text":"24h",
+    "parent":null
+  },
+    {
+      "name":"24h2.png",
+      "text":"24h2",
+      "parent":null
+    },
+    {
+      "name":"bathroom.png",
+      "text":"bathroom",
+      "parent":null
+    },
+    {
+      "name":"broken_boat.png",
+      "text":"broken_boat",
+      "parent":null
+    },
+    {
+      "name":"broken_bus.png",
+      "text":"broken_bus",
+      "parent":null
+    },
+    {
+      "name":"broken_car.png",
+      "text":"broken_car",
+      "parent":null
+    },
+    {
+      "name":"bus.png",
+      "text":"bus",
+      "parent":null
+    },
+    {
+      "name":"call.png",
+      "text":"call",
+      "parent":null
+    },
+    {
+      "name":"camera.png",
+      "text":"camera",
+      "parent":null
+    },
+    {
+      "name":"catastrophe.png",
+      "text":"catastrophe",
+      "parent":null
+    },
+    {
+      "name":"change.png",
+      "text":"change",
+      "parent":null
+    },
+    {
+      "name":"charge.png",
+      "text":"charge",
+      "parent":null
+    },
+    {
+      "name":"chat.png",
+      "text":"chat",
+      "parent":null
+    },
+    {
+      "name":"chat2.png",
+      "text":"chat2",
+      "parent":null
+    },
+    {
+      "name":"chat3.png",
+      "text":"chat3",
+      "parent":null
+    },
+    {
+      "name":"chat4.png",
+      "text":"chat4",
+      "parent":null
+    },
+    {
+      "name":"chat5.png",
+      "text":"chat5",
+      "parent":null
+    },
+    {
+      "name":"chat6.png",
+      "text":"chat6",
+      "parent":null
+    },
+    {
+      "name":"chat7.png",
+      "text":"chat7",
+      "parent":null
+    },
+    {
+      "name":"chat22.png",
+      "text":"chat22",
+      "parent":null
+    },
+    {
+      "name":"clock.png",
+      "text":"clock",
+      "parent":null
+    },
+    {
+      "name":"cloths.png",
+      "text":"cloths",
+      "parent":null
+    },
+    {
+      "name":"cloths2.png",
+      "text":"cloths2",
+      "parent":null
+    },
+    {
+      "name":"coffee.png",
+      "text":"coffee",
+      "parent":null
+    },
+    {
+      "name":"cough.png",
+      "text":"cough",
+      "parent":null
+    },
+    {
+      "name":"doctor.png",
+      "text":"doctor",
+      "parent":null
+    },
+    {
+      "name":"family.png",
+      "text":"family",
+      "parent":null
+    },
+    {
+      "name":"food.png",
+      "text":"food",
+      "parent":null
+    },
+    {
+      "name":"food4.png",
+      "text":"food4",
+      "parent":null
+    },
+    {
+      "name":"head.png",
+      "text":"head",
+      "parent":null
+    },
+    {
+      "name":"health.png",
+      "text":"health",
+      "parent":null
+    },
+    {
+      "name":"health2.png",
+      "text":"health2",
+      "parent":null
+    },
+    {
+      "name":"health3.png",
+      "text":"health3",
+      "parent":null
+    },
+    {
+      "name":"health32.png",
+      "text":"health32",
+      "parent":null
+    },
+    {
+      "name":"heart.png",
+      "text":"heart",
+      "parent":null
+    },
+    {
+      "name":"heart2.png",
+      "text":"heart2",
+      "parent":null
+    },
+    {
+      "name":"location.png",
+      "text":"location",
+      "parent":null
+    },
+    {
+      "name":"lungs.png",
+      "text":"lungs",
+      "parent":null
+    },
+    {
+      "name":"map.png",
+      "text":"map",
+      "parent":null
+    },
+    {
+      "name":"medicine.png",
+      "text":"medicine",
+      "parent":null
+    },
+    {
+      "name":"medicine2.png",
+      "text":"medicine2",
+      "parent":null
+    },
+    {
+      "name":"megaphone.png",
+      "text":"megaphone",
+      "parent":null
+    },
+    {
+      "name":"mombaby.png",
+      "text":"mombaby",
+      "parent":null
+    },
+    {
+      "name":"pain.png",
+      "text":"pain",
+      "parent":null
+    },
+    {
+      "name":"phone.png",
+      "text":"phone",
+      "parent":null
+    },
+    {
+      "name":"plane.png",
+      "text":"plane",
+      "parent":null
+    },
+    {
+      "name":"police.png",
+      "text":"police",
+      "parent":null
+    },
+    {
+      "name":"police2.png",
+      "text":"police2",
+      "parent":null
+    },
+    {
+      "name":"police3.png",
+      "text":"police3",
+      "parent":null
+    },
+    {
+      "name":"refresh.png",
+      "text":"refresh",
+      "parent":null
+    },
+    {
+      "name":"search_user.png",
+      "text":"search_user",
+      "parent":null
+    },
+    {
+      "name":"search_user2.png",
+      "text":"search_user2",
+      "parent":null
+    },
+    {
+      "name":"search_user3.png",
+      "text":"search_user3",
+      "parent":null
+    },
+    {
+      "name":"taxi.png",
+      "text":"taxi",
+      "parent":null
+    },
+    {
+      "name":"tooth.png",
+      "text":"tooth",
+      "parent":null
+    },
+    {
+      "name":"user_marker.png",
+      "text":"user_marker",
+      "parent":null
+    },
+    {
+      "name":"users.png",
+      "text":"users",
+      "parent":null
+    },
+    {
+      "name":"water.png",
+      "text":"water",
+      "parent":null
+    }
 	],
 	"countries": [
 		{
