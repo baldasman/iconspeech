@@ -16,4 +16,10 @@
 	page-home .cards {
 		height: calc(33.33vh - (88px / 3));
 	}
+
+	page-icons-message {
+		ion-toolbar {
+			top: 88px;
+		}
+	}
 }

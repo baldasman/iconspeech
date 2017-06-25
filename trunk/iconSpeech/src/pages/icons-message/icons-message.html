@@ -1,29 +1,29 @@
 <ion-header>
     <component-header></component-header>
-
-    <ion-toolbar id="toolbar">
-        <div class="message-container">
-            <div class="message-icons-container">
-                <img *ngFor="let messageIcon of messageIcons" [src]="messageIcon" class="message-icon"/>
-            </div>
-
-            <button ion-button icon-only (click)="eraseLastIcon()">
-                <ion-icon name="backspace"></ion-icon>
-            </button>
-        </div>
-
-        <div *ngIf="messageTextAux.length > 0" class="message-text-container">
-            <div class="message-text">
-                {{ messageText }}
-                <ion-spinner *ngIf="messageTextLoading" name="crescent"></ion-spinner>
-            </div>
-
-            <button ion-button icon-only (click)="goToTranslationText()">
-                <ion-icon name="send"></ion-icon>
-            </button>
-        </div>
-    </ion-toolbar>
 </ion-header>
+
+<ion-toolbar id="toolbar">
+    <div class="message-container">
+        <div class="message-icons-container">
+            <img *ngFor="let messageIcon of messageIcons" [src]="messageIcon" class="message-icon"/>
+        </div>
+
+        <button ion-button icon-only clear (click)="eraseLastIcon()">
+            <ion-icon name="backspace"></ion-icon>
+        </button>
+    </div>
+
+    <div *ngIf="messageTextAux.length > 0" class="message-text-container">
+        <div class="message-text">
+            {{ messageText }}
+            <ion-spinner *ngIf="messageTextLoading" name="crescent"></ion-spinner>
+        </div>
+
+        <button ion-button icon-only clear (click)="goToTranslationText()">
+            <ion-icon name="send"></ion-icon>
+        </button>
+    </div>
+</ion-toolbar>
 
 <ion-content>
     <div id="icons-container">

@@ -26,6 +26,7 @@ export class IconsMessagePage extends BasePage {
         this.messageText = '';
         this.messageTextAux = [];
         this.messageTextLoading = false;
+        this.setScrollContentHeight();
     }
 
     selectIcon(name: string, text: string) {

@@ -1,4 +1,9 @@
 page-icons-message {
+	ion-toolbar .toolbar-background {
+		background-color: #fff;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	}
+
 	.message-container {
 		@extend .row, .start-start;
 	}

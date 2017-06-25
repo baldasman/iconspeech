@@ -16,6 +16,10 @@ export class HomePage extends BasePage {
         super(navCtrl);
     }
 
+    goToIconsMessage(name: string) {
+        this.navCtrl.push(IconsMessagePage, { iconName: name })
+    }
+
     goToCommunicationTypes() {
         this.navCtrl.push(CommunicationTypesPage);
     }
