@@ -23,8 +23,10 @@ export class AppConstants extends BaseService {
 		} else if (this.platform.is('android')) {
 			url = '/android_asset/www';
 		} else if (this.platform.is('ios')) {
-			url = 'XIMI.app/www';
+			url = 'iconSpeech.app/www';
 		}
+
+		console.log("isIOS?" + this.platform.is('ios'), "isAndroid?" + this.platform.is('android'), url);
 
 		return this.http.get(url + '/assets/data/constants.json')
 			.map(this.extractData)
