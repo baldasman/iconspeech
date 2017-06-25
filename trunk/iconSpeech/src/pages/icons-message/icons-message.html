@@ -20,6 +20,9 @@
 
 
     <div class="icons-container">
-        <img *ngFor="let icon of appConstants.icons" src="{{ 'assets/imgs/' + icon.name}}" (click)="selectIcon(icon.name, icon.text)" class="available-icon"/>
+        <div *ngFor="let icon of appConstants.icons" class="icon-container">
+            <img src="{{ 'assets/imgs/' + icon.name}}" (click)="selectIcon(icon.name, icon.text)" class="available-icon"/>
+            <!--{{ icon.text | translate }}-->
+        </div>
     </div>
 </ion-content>

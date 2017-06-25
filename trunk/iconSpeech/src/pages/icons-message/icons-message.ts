@@ -33,6 +33,8 @@ export class IconsMessagePage extends BasePage {
 
     getTranslation(text?: string) {
         this.messageTextLoading = true;
+        this.messageText = '';
+
         if (text) {
             this.messageTextAux.push(text);
         }

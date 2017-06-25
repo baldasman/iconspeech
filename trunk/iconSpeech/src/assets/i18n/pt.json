@@ -3,6 +3,9 @@
 		"iconSpeech": "IconSpeech"
 	},
 	"constants": {
+		"icons": {
+			"": ""
+		},
 		"supportedLanguages": {
 			"internalCode1": "Português",
 			"internalCode2": "Inglês"

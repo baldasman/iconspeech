@@ -18,6 +18,17 @@ page-icons-message {
 		height: 50px;
 	}
 
+	.icons-container {
+		@extend .row, .start-start, .wrap;
+	}
+
+	.icon-container {
+		@extend .row, .center-center;
+
+		height: 33.33vw;
+		width: 50%;
+	}
+
 	img.available-icon {
 		height: 33.33vw;
 	}
