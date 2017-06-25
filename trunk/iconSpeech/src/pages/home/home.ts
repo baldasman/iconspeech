@@ -11,22 +11,16 @@ import {TranslationVoicePage} from "../translation-voice/translation-voice";
 })
 export class HomePage extends BasePage {
 
-  constructor(navCtrl: NavController) {
-    super(navCtrl);
-  }
+    constructor(navCtrl: NavController) {
+        super(navCtrl);
+    }
 
-  goToIconsMessage() {
-    this.navCtrl.push(IconsMessagePage);
-  }
+    goToCommunicationTypes() {
+        this.navCtrl.push(CommunicationTypesPage);
+    }
 
-
-  goToCommunicationTypes() {
-    this.navCtrl.push(CommunicationTypesPage);
-  }
-
-  goToFood() {
-    this.navCtrl.push(TranslationVoicePage);
-
-  }
+    goToFood() {
+        this.navCtrl.push(TranslationVoicePage);
+    }
 
 }
