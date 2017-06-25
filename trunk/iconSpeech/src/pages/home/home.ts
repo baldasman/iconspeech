@@ -19,12 +19,15 @@ export class HomePage extends BasePage {
         this.navCtrl.push(IconsMessagePage);
     }
 
+
+
     goToCommunicationTypes() {
         this.navCtrl.push(CommunicationTypesPage);
     }
 
     gotToFood(){
       this.navCtrl.push(TranslationVoicePage);
+
     }
 
-}
+
