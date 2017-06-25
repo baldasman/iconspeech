@@ -23,6 +23,8 @@ export class BaseService {
 		let headers = new Headers();
 		headers.append('Content-Type', 'application/json');
 		headers.append('Accept', 'application/json');
+		headers.append('Access-Control-Allow-Origin', '*');
+		headers.append('Access-Control-Allow-Methods', '*');
 
 		if (token) {
 			headers.append('Authorization', token);
@@ -35,6 +37,7 @@ export class BaseService {
 		let body = res.json() || {};
 		let data = { status: res.status, ok: res.ok, statusText: res.statusText, headers: res.headers, body: body };
 
+        console.log('body', body);
 		return data;
 	}
 

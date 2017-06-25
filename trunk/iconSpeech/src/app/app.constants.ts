@@ -19,14 +19,17 @@ export class AppConstants extends BaseService {
 		let url = '';
 
 		if(this.platform.is('core') || this.platform.is('mobileweb')){
-			url = '';
+			url = '/assets/data/constants.json';
 		} else if (this.platform.is('android')) {
-			url = '/android_asset/www';
+			url = '/android_asset/www/assets/data/constants.json';
 		} else if (this.platform.is('ios')) {
-			url = 'XIMI.app/www';
+			//url = 'iconSpeech.app/www';
+			url = 'assets/data/constants.json';
 		}
 
-		return this.http.get(url + '/assets/data/constants.json')
+		console.log("isIOS?" + this.platform.is('ios'), "isAndroid?" + this.platform.is('android'), url);
+
+		return this.http.get(url)
 			.map(this.extractData)
 			.catch(this.handleError);
 	}

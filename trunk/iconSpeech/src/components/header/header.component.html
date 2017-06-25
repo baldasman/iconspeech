@@ -1,11 +1,13 @@
 <ion-navbar>
+    <img src="assets/icon/iconSpeech-no-slogan.png" style="height: 30px;"/>
+
     <ion-buttons end>
         <button ion-button clear (click)="presentPopover('source')">
             <div *ngIf="appVariables.sourceLanguage" class="button-language">{{ appVariables.sourceLanguage }}</div>
         </button>
 
-        <button ion-button clear (click)="toggleLanguages()">
-            <img src="assets/imgs/change.png"/>
+        <button ion-button clear (click)="appVariables.toggleSourceAndTargetLanguages()">
+            <img src="assets/imgs/change.png" class="header-img"/>
         </button>
 
         <button ion-button clear (click)="presentPopover('target')">

@@ -1,14 +1,29 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <component-header></component-header>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+
+  <div class="cards-container-2">
+
+    <div (click)="goToIconsMessage()" style="background-color: #2ec95c;" class="cards-2">
+
+      <img class="img-cards" src="assets/icon/speech.png" style="height: 54%; width: 36%;"/>
+
+    </div>
+
+    <div (click)="goToTranslationVoice()" style="background-color: #fcc32b" class="cards-2">
+
+      <img class="img-cards" src="assets/imgs/megaphone.png"/>
+
+    </div>
+
+    <div (click)="goToTranslationText()" style="background-color: #2f9f93" class="cards-2">
+
+      <img class="img-cards" src="assets/imgs/chat7.png"/>
+
+    </div>
+
+  </div>
+
 </ion-content>

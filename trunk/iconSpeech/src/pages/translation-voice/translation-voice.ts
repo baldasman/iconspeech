@@ -3,6 +3,8 @@ import { NavController, Platform } from 'ionic-angular';
 import { MediaPlugin, MediaObject } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
 import { Transfer, FileUploadOptions, TransferObject } from '@ionic-native/transfer';
+import {TranslationVoiceService} from "../../providers/translation-voice-service/translation-voice.service";
+import {$WebSocket, WebSocketSendMode} from 'angular2-websocket/angular2-websocket';
 
 @Component({
   selector: 'page-translation-voice',
@@ -11,10 +13,19 @@ import { Transfer, FileUploadOptions, TransferObject } from '@ionic-native/trans
 export class TranslationVoicePage {
   fileRecorded: any;
   fileTransfer: TransferObject;
+  recording: boolean = false;
+  ws :any;
 
-  constructor(private transfer: Transfer, private media: MediaPlugin, private file: File) {
+  constructor(private transfer: Transfer, private media: MediaPlugin, private file: File,  private translateVoiceService: TranslationVoiceService) {
 
     this.fileTransfer = this.transfer.create();
+
+
+
+// set received message stream
+
+// send with default send mode (now default send mode is Observer)
+
   }
 
   upload() {
@@ -36,22 +47,39 @@ export class TranslationVoicePage {
   }
 
   startRecord(){
+    this.recording = true;
     const onStatusUpdate = (status) => console.log(status);
     const onSuccess = () => console.log('Action is successful.');
     const onError = (error) => console.error(error.message);
-    this.fileRecorded = this.media.create('my_file.wav',  onStatusUpdate, onSuccess, onError);
+    this.fileRecorded = this.media.create('my_file.mp3',  onStatusUpdate, onSuccess, onError);
     this.fileRecorded.startRecord();
+
   }
 
   stopRecord(){
+    this.recording = false;
     this.fileRecorded.stopRecord();
+
+    this.startPlay();
   }
 
   startPlay(){
     this.fileRecorded.play();
-    console.log('cenas:', this.file.resolveLocalFilesystemUrl(this.file.externalRootDirectory + 'my_file.wav'));
-    console.log('cenas data', this.file.readAsDataURL(this.file.externalRootDirectory, 'my_file.wav'));
+
+     this.file.readAsDataURL(this.file.externalRootDirectory, 'my_file.mp3').then((data) => {
+       console.log('data', data);
+       let params = {
+         data: data
+       };
+       this.translateVoiceService.speech2text(params).subscribe((data) => {
+         console.log('data response', data);
+       });
+    });
+
+
   }
+
+
 
 
 

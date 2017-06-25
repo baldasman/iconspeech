@@ -1,3 +1,20 @@
 page-home {
+	.cards-container {
+		@extend .row, .start-start, .wrap;
+	}
+
+  .cards{
+		@extend .row, .center-center;
+
+    width: 50%;
+    height: calc(33.33vh - (56px / 3));
+		border: 1px solid white;
+  }
+
+  .img-cards{
+
+    width: 50%;
+
+  }
 
 }

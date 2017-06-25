@@ -1,14 +1,20 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <component-header></component-header>
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="startRecord()">Start record</button>
-  <button ion-button (click)="stopRecord()">Stop record</button>
-  <button ion-button (click)="startPlay()">Start play</button>
-  <button ion-button (click)="upload()">upload</button>
+  <div class="row center-center" style="height:300px; width:100%;">
+    <img *ngIf="recording" src='assets/imgs/soundgif2.gif'>
+  </div>
+
+  <div class="row center-center">
+    <button style="width: 70px; height: 70px;" *ngIf="!recording"  ion-button icon-only (click)="startRecord()">
+      <ion-icon name="play"></ion-icon>
+    </button>
+    <button style="width: 70px; height: 70px;" *ngIf="recording"  ion-button icon-only (click)="stopRecord()">
+      <ion-icon name="pause"></ion-icon>
+    </button>
+  </div>
+
+
 </ion-content>

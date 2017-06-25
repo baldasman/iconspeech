@@ -1,3 +1,45 @@
-page-communication-types {
+page-icons-message {
+	.message-container {
+		@extend .row, .start-start;
+	}
 
+	.message-icons-container {
+		@extend .wrap;
+
+		display: flex;
+		flex: 1;
+	}
+
+	img.message-icon {
+		height: 50px;
+	}
+
+	.message-text-container {
+		@extend .row, .space-between-start;
+
+		line-height: 50px;
+		border-top: 1px solid #888;
+	}
+
+	.message-text {
+		@extend .wrap;
+
+		display: flex;
+		flex: 1;
+	}
+
+	.icons-container {
+		@extend .row, .start-start, .wrap;
+	}
+
+	.icon-container {
+		@extend .row, .center-center;
+
+		height: 33.33vw;
+		width: 50%;
+	}
+
+	img.available-icon {
+		height: 33.33vw;
+	}
 }
