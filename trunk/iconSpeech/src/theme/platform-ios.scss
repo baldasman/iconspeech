@@ -1,4 +1,8 @@
-.platform-android {
+.platform-ios {
+	ion-navbar {
+		height: 88px;
+	}
+
 	component-header {
 		.logo {
 			height: 30px;
@@ -10,6 +14,6 @@
 	}
 
 	page-home .cards {
-		height: calc(33.33vh - (56px / 3));
+		height: calc(33.33vh - (88px / 3));
 	}
 }

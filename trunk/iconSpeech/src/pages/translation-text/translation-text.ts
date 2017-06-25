@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import {TranslationTextService} from "../../providers/translation-text-service/translation-text.service";
 import {MediaPlugin} from "@ionic-native/media";
 import {BaseService} from "../../providers/base.service";
@@ -17,10 +17,17 @@ export class TranslationTextPage extends BasePage{
   textAudio: any;
   canRead: boolean = false;
   audio: any;
-  constructor(navCtrl: NavController, public translationTextService: TranslationTextService, private media: MediaPlugin, private iab: InAppBrowser) {
+  constructor(navCtrl: NavController, public translationTextService: TranslationTextService, private media: MediaPlugin, private iab: InAppBrowser, private navParams: NavParams) {
     super(navCtrl);
 
   }
+
+    ionViewDidEnter() {
+        if (this.navParams.get('inputText')) {
+            this.enterText = this.navParams.get('inputText');
+            this.getTranslation();
+        }
+    }
 
   getTranslation(){
     let params = {

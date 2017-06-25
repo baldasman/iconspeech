@@ -1,11 +1,10 @@
 {
 	"common": {
-		"iconSpeech": "IconSpeech"
+		"iconSpeech": "IconSpeech",
+		"translate": "Traduzir",
+		"listen": "Ouvir tradução"
 	},
 	"constants": {
-		"icons": {
-			"": ""
-		},
 		"supportedLanguages": {
 			"internalCode1": "Português",
 			"internalCode2": "Inglês"
