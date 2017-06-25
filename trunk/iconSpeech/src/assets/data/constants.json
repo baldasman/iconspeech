@@ -11,6 +11,51 @@
 	],
 	"icons": [
     {
+      "name":"dress.png",
+      "text":"dress",
+      "parent":"cloths2"
+    },
+    {
+      "name":"shoe.png",
+      "text":"tennis",
+      "parent":"cloths2"
+    },
+    {
+      "name":"shirt.png",
+      "text":"polo",
+      "parent":"cloths2"
+    },
+    {
+      "name":"shirt2.png",
+      "text":"shirt",
+      "parent":"cloths2"
+    },
+    {
+      "name":"bag.png",
+      "text":"bag",
+      "parent":"cloths2"
+    },
+    {
+      "name":"hat.png",
+      "text":"hat",
+      "parent":"cloths2"
+    },
+    {
+      "name":"jacket.png",
+      "text":"jacket",
+      "parent":"cloths2"
+    },
+    {
+      "name":"pants.png",
+      "text":"pants",
+      "parent":"cloths2"
+    },
+    {
+      "name":"shoe2.png",
+      "text":"shoes",
+      "parent":"cloths2"
+    },
+    {
     "name":"24h.png",
     "text":"One day",
     "parent": "health32"
@@ -28,37 +73,37 @@
     {
       "name":"broken_boat.png",
       "text":"broken boat",
-      "parent":null
+      "parent":"police2"
     },
     {
       "name":"broken_bus.png",
       "text":"broken bus",
-      "parent":null
+      "parent":"police2"
     },
     {
       "name":"broken_car.png",
       "text":"broken car",
-      "parent":null
+      "parent":"police2"
     },
     {
       "name":"bus.png",
       "text":"bus",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"call.png",
       "text":"call",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"camera.png",
       "text":"camera",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"catastrophe.png",
       "text":"catastrophe",
-      "parent":null
+      "parent":"police2"
     },
     {
       "name":"change.png",
@@ -68,7 +113,7 @@
     {
       "name":"charge.png",
       "text":"charge",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"chat.png",
@@ -143,7 +188,7 @@
     {
       "name":"family.png",
       "text":"family",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"food.png",
@@ -193,7 +238,7 @@
     {
       "name":"location.png",
       "text":"location",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"lungs.png",
@@ -203,7 +248,7 @@
     {
       "name":"map.png",
       "text":"map",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"medicine.png",
@@ -258,7 +303,7 @@
     {
       "name":"refresh.png",
       "text":"refresh",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"search_user.png",
@@ -278,7 +323,7 @@
     {
       "name":"taxi.png",
       "text":"taxi",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"tooth.png",
@@ -288,12 +333,12 @@
     {
       "name":"user_marker.png",
       "text":"user marker",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"users.png",
       "text":"users",
-      "parent":null
+      "parent":"search_user3"
     },
     {
       "name":"water.png",
