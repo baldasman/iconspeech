@@ -4,6 +4,7 @@ import {BasePage} from "../base-page";
 import {IconsMessagePage} from "../icons-message/icons-message";
 import {CommunicationTypesPage} from "../communication-types/communication-types";
 import {TranslationVoicePage} from "../translation-voice/translation-voice";
+import {TranslationTextPage} from "../translation-text/translation-text";
 
 @Component({
     selector: 'page-home',
@@ -11,22 +12,13 @@ import {TranslationVoicePage} from "../translation-voice/translation-voice";
 })
 export class HomePage extends BasePage {
 
-  constructor(navCtrl: NavController) {
-    super(navCtrl);
-  }
+    constructor(navCtrl: NavController) {
+        super(navCtrl);
+    }
 
-  goToIconsMessage() {
-    this.navCtrl.push(IconsMessagePage);
-  }
+    goToCommunicationTypes() {
+        this.navCtrl.push(CommunicationTypesPage);
+    }
 
-
-  goToCommunicationTypes() {
-    this.navCtrl.push(CommunicationTypesPage);
-  }
-
-  goToFood() {
-    this.navCtrl.push(TranslationVoicePage);
-
-  }
 
 }

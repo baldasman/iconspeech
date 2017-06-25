@@ -1,21 +1,31 @@
 page-icons-message {
-	.message-container button {
-		float: right;
-		margin-top: calc((53px - 36px) / 2);
-		margin-bottom: calc((53px - 36px) / 2);
+	.message-container {
+		@extend .row, .start-start;
 	}
 
-	.text-message-container {
-		line-height: 40px;
-		border-top: 1px solid #888;
+	.message-icons-container {
+		@extend .wrap;
 
-		span {
-			margin-right: 0.33em;
-		}
+		display: flex;
+		flex: 1;
 	}
 
 	img.message-icon {
 		height: 50px;
+	}
+
+	.message-text-container {
+		@extend .row, .space-between-start;
+
+		line-height: 50px;
+		border-top: 1px solid #888;
+	}
+
+	.message-text {
+		@extend .wrap;
+
+		display: flex;
+		flex: 1;
 	}
 
 	.icons-container {

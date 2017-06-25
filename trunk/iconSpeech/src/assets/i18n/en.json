@@ -1,6 +1,8 @@
 {
 	"common": {
-		"iconSpeech": "IconSpeech"
+		"iconSpeech": "IconSpeech",
+		"translate": "Translate",
+		"listen": "Listen translation"
 	},
 	"constants": {
 		"supportedLanguages": {

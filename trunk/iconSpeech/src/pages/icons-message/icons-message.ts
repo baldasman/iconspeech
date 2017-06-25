@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {BasePage} from "../base-page";
 import {TranslationTextService} from "../../providers/translation-text-service/translation-text.service";
+import {TranslationTextPage} from "../translation-text/translation-text";
 
 @Component({
     selector: 'page-icons-message',
@@ -16,6 +17,8 @@ export class IconsMessagePage extends BasePage {
 
     constructor(navCtrl: NavController, private translationTextService: TranslationTextService) {
         super(navCtrl);
+
+        this.messageTextAux = [];
     }
 
     ionViewDidEnter() {
@@ -44,7 +47,6 @@ export class IconsMessagePage extends BasePage {
             from: 'en',
             to: this.appVariables.sourceLanguage
         }).subscribe((data) => {
-            console.log('data', data);
             this.messageText = data['body'].translations[0].translation;
             this.messageTextLoading = false;
         });
@@ -54,7 +56,15 @@ export class IconsMessagePage extends BasePage {
         if (this.messageIcons.length) {
             this.messageIcons.splice(this.messageIcons.length - 1, 1);
             this.messageTextAux.splice(this.messageTextAux.length - 1, 1);
-            this.getTranslation();
+            if (this.messageIcons.length) {
+                this.getTranslation();
+            }
+        }
+    }
+
+    goToTranslationText() {
+        if (this.messageTextAux.length > 0) {
+            return this.navCtrl.push(TranslationTextPage, { inputText: this.messageText });
         }
     }
 }

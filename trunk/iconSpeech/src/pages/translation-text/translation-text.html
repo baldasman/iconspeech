@@ -3,8 +3,29 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="column center-center" style="height: 76%;">
+    <ion-card style="height: 50%;">
+      <ion-card-content style="height: 100%;">
+        <textarea placeholder="Introduzir texto" [(ngModel)]="enterText" style="width: 100%; height: 100%; font-size: 30px; border: none;">
+
+        </textarea>
+      </ion-card-content>
+    </ion-card>
+    <ion-card style="height: 50%;">
+      <ion-card-content style="height: 100%;">
+        <textarea placeholder="Tradução" [(ngModel)]="textTranslated" style="width: 100%; height: 100%; font-size: 30px; border: none;" readonly>
+
+        </textarea>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div style="height: 22%;" class="column center-center">
+    <button style="width: 80%; height: 70px;"  ion-button (click)="getTranslation()">
+      {{ 'common.translate' | translate }}
+    </button>
+    <button *ngIf="canRead" style="width: 80%; height: 70px; margin-top: 15px;"  ion-button (click)="playAudio()">
+      {{ 'common.listen' | translate }}
+    </button>
+
+  </div>
 </ion-content>
