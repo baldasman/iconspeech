@@ -4,10 +4,11 @@
 
 <ion-content>
     <ion-toolbar>
-        <div class="row space-between-center">
-            <ion-textarea type="text" [(ngModel)]="messageBoxContent" placeholder="{{ 'placeholders.typeHere' | translate }}"></ion-textarea>
-            <button ion-button icon-only (click)="sendMessage()">
-                <ion-icon name="send"></ion-icon>
+        <div class="message-container">
+            <img *ngFor="let messageIcon of messageIcons" [src]="messageIcon" class="message-icon"/>
+
+            <button ion-button icon-only (click)="eraseLastIcon()">
+                <ion-icon name="backspace"></ion-icon>
             </button>
         </div>
     </ion-toolbar>
