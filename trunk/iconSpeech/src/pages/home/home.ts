@@ -11,20 +11,22 @@ import {TranslationVoicePage} from "../translation-voice/translation-voice";
 })
 export class HomePage extends BasePage {
 
-    constructor(navCtrl: NavController) {
-        super(navCtrl);
-    }
+  constructor(navCtrl: NavController) {
+    super(navCtrl);
+  }
 
-    goToIconsMessage() {
-        this.navCtrl.push(IconsMessagePage);
-    }
+  goToIconsMessage() {
+    this.navCtrl.push(IconsMessagePage);
+  }
 
-    goToCommunicationTypes() {
-        this.navCtrl.push(CommunicationTypesPage);
-    }
 
-    gotToFood(){
-      this.navCtrl.push(TranslationVoicePage);
-    }
+  goToCommunicationTypes() {
+    this.navCtrl.push(CommunicationTypesPage);
+  }
+
+  goToFood() {
+    this.navCtrl.push(TranslationVoicePage);
+
+  }
 
 }

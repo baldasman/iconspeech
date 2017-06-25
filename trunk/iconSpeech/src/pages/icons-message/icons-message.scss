@@ -1,13 +1,24 @@
 page-icons-message {
-	.message-container {
-		//@extend .row, .start-center;
+	.message-container button {
+		float: right;
+		margin-top: calc((53px - 36px) / 2);
+		margin-bottom: calc((53px - 36px) / 2);
+	}
 
-		button {
-			float: right;
+	.text-message-container {
+		line-height: 40px;
+		border-top: 1px solid #888;
+
+		span {
+			margin-right: 0.33em;
 		}
 	}
 
 	img.message-icon {
 		height: 50px;
+	}
+
+	img.available-icon {
+		height: 33.33vw;
 	}
 }

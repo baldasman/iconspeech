@@ -11,5 +11,15 @@
                 <ion-icon name="backspace"></ion-icon>
             </button>
         </div>
+
+        <div class="text-message-container">
+            <div *ngIf="messageText">{{ messageText }}</div>
+            <ion-spinner *ngIf="messageTextLoading" name="crescent"></ion-spinner>
+        </div>
     </ion-toolbar>
+
+
+    <div class="icons-container">
+        <img *ngFor="let icon of appConstants.icons" src="{{ 'assets/imgs/' + icon.name}}" (click)="selectIcon(icon.name, icon.text)" class="available-icon"/>
+    </div>
 </ion-content>
