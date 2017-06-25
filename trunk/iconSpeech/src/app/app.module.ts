@@ -24,6 +24,7 @@ import {LanguagesSelectorPopoverPage} from "../popovers/languages-selector/langu
 import {HeaderComponent} from "../components/header/header.component";
 import {AppVariables} from "./app.variables";
 import {TranslationVoiceService} from "../providers/translation-voice-service/translation-voice.service";
+import {TranslationTextService} from "../providers/translation-text-service/translation-text.service";
 
 @NgModule({
     declarations: [
@@ -70,6 +71,7 @@ import {TranslationVoiceService} from "../providers/translation-voice-service/tr
         MediaPlugin,
         File,
         Transfer,
+        TranslationTextService,
         TranslationVoiceService,
         {provide: ErrorHandler, useClass: IonicErrorHandler}
 
