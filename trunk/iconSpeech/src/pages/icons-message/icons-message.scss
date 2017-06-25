@@ -28,7 +28,7 @@ page-icons-message {
 		flex: 1;
 	}
 
-	.icons-container {
+	#icons-container {
 		@extend .row, .start-start, .wrap;
 	}
 

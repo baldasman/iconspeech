@@ -32,6 +32,7 @@ export class IconsMessagePage extends BasePage {
         let iconPath: string = 'assets/imgs/' + name;
         this.messageIcons.push(iconPath);
         this.getTranslation(text);
+        this.setScrollContentHeight();
     }
 
     getTranslation(text?: string) {
@@ -60,6 +61,11 @@ export class IconsMessagePage extends BasePage {
                 this.getTranslation();
             }
         }
+        this.setScrollContentHeight();
+    }
+
+    setScrollContentHeight() {
+        document.getElementById('icons-container').style.marginTop = document.getElementById('toolbar').offsetHeight + 'px';
     }
 
     goToTranslationText() {

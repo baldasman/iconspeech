@@ -1,9 +1,7 @@
 <ion-header>
     <component-header></component-header>
-</ion-header>
 
-<ion-content>
-    <ion-toolbar>
+    <ion-toolbar id="toolbar">
         <div class="message-container">
             <div class="message-icons-container">
                 <img *ngFor="let messageIcon of messageIcons" [src]="messageIcon" class="message-icon"/>
@@ -25,9 +23,10 @@
             </button>
         </div>
     </ion-toolbar>
+</ion-header>
 
-
-    <div class="icons-container">
+<ion-content>
+    <div id="icons-container">
         <div *ngFor="let icon of appConstants.icons" class="icon-container">
             <img src="{{ 'assets/imgs/' + icon.name}}" (click)="selectIcon(icon.name, icon.text)" class="available-icon"/>
             <!--{{ icon.text | translate }}-->
