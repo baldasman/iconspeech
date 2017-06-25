@@ -113,7 +113,7 @@
     {
       "name":"clock.png",
       "text":"clock",
-      "parent":null
+      "parent":"food4"
     },
     {
       "name":"cloths.png",
@@ -128,7 +128,7 @@
     {
       "name":"coffee.png",
       "text":"coffee",
-      "parent":null
+      "parent":"food4"
     },
     {
       "name":"cough.png",
@@ -148,7 +148,7 @@
     {
       "name":"food.png",
       "text":"food",
-      "parent":null
+      "parent":"food4"
     },
     {
       "name":"food4.png",
@@ -298,7 +298,7 @@
     {
       "name":"water.png",
       "text":"water",
-      "parent":null
+      "parent":"food4"
     }
 	],
 	"countries": [
